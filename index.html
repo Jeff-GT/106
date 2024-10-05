@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="./scripts/style.css">
+   <title>Document</title>
+</head>
+<body>
+   <header>
+         <h1 class="bg-primary bg-gradient text-white text-center">Task Manager</h1>
+   </header>
+   <main>
+      
+      <section id="list" class="border bg-primary bg-opacity-10 overflow-auto">
+         Get Section
+      </section>
+      
+      <section id="form" class="border">
+         
+         <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" id="txtTitle">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea row="3" class="form-control" id="txtDescription"></textarea>
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Color</label>
+            <input type="color" class="form-control" id="selColor">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Start Date</label>
+            <input type="datetime-local" class="form-control" id="selDate">
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Status</label>
+            <select class="form-control" id="selStatus" placeholder="">
+               <option value="">Select Status</option>
+               <option value="New">New</option>
+               <option value="In Progress">In Progress</option>
+               <option value="Complete">Complete</option>
+            </select>
+         </div>
+         <div class="mb-3">
+            <label class="form-label">Budget</label>
+            <input type="text" inputmode="numeric" class="form-control" id="numBudget">
+         </div>
+         <div class="mb-3">
+            <button id="btnSave" class="btn btn-dark">Save Task</button>
+         </div>
+      </section> 
+   </main>
+</body>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> 
+   <script src="./scripts/task.js"></script> 
+   <script src="./scripts/app.js"></script>
+</html>
